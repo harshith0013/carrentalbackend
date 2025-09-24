@@ -11,14 +11,14 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EntityScan(basePackages = "com.example.carrental.model")
 @EnableJpaRepositories(basePackages = "com.example.carrental.repository")
 @SpringBootApplication
-public class CarrentalApplication extends SpringBootServletInitializer {
+public class CarRentalApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
-        SpringApplication.run(CarrentalApplication.class, args);
+        SpringApplication.run(CarRentalApplication.class, args);
     }
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(CarrentalApplication.class);
+        return builder.sources(CarRentalApplication.class);
     }
 }
